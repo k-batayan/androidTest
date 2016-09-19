@@ -35,7 +35,7 @@ dependencies:
 test:  
   override:
     #- ./gradlew --full-stacktrace check
-    - echo "-----test-----"
+    - echo "--------test--------"
 
 deployment:
   release:

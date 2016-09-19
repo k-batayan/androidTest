@@ -2,6 +2,7 @@ general:
   branches:
     only:
       - master
+      - /release_.*/
   artifacts:
     - "app/build/outputs/apk"
 

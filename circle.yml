@@ -1,4 +1,8 @@
 general:
+  branches:
+    only:
+      - master
+  #成果物の保存パス指定
   artifacts:
     - "app/build/outputs/apk/app-release.apk"
 
@@ -35,6 +39,7 @@ test:
 
 deployment:
   release:
-    branch: /release_.*/
+#    branch: /release_.*/
+    branch: master
     commands:
       - ./gradlew assembleRelease

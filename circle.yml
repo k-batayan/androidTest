@@ -35,7 +35,7 @@ dependencies:
 test:  
   override:
     #- ./gradlew --full-stacktrace check
-    - echo "-----test-----"
+    - echo "--------test--------"
 
 deployment:
   release:
@@ -43,4 +43,5 @@ deployment:
 #    branch: master
     commands:
       - ./gradlew assembleRelease
-      - curl -F "file=@app/build/outputs/apk/app-release-unsigned.apk" -F "token=3b727e30039ae4af2c31e96d6e567bd3df0ed01d" -F "message=sample" https://deploygate.com/api/users/k-batayan/apps
+      - ./gradlew uploadDeployGate
+      #- curl -F "file=@app/build/outputs/apk/app-release-unsigned.apk" -F "token=3b727e30039ae4af2c31e96d6e567bd3df0ed01d" -F "message=sample" https://deploygate.com/api/users/k-batayan/apps

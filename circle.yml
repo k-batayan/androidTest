@@ -36,26 +36,26 @@ test:
   override:
     #- ./gradlew --full-stacktrace check
     - echo "--------test--------"
-    - echo CIRCLECI
-    - echo CI
-    - echo CIRCLE_PROJECT_USERNAME
-    - echo CIRCLE_PROJECT_REPONAME
-    - echo CIRCLE_BRANCH
-    - echo CIRCLE_TAG
-    - echo CIRCLE_SHA1
-    - echo CIRCLE_REPOSITORY_URL
-    - echo CIRCLE_COMPARE_URL
-    - echo CIRCLE_BUILD_NUM
-    - echo CIRCLE_PREVIOUS_BUILD_NUM
-    - echo CI_PULL_REQUESTS
-    - echo CI_PULL_REQUEST
-    - echo CIRCLE_ARTIFACTS
-    - echo CIRCLE_USERNAME
-    - echo CIRCLE_TEST_REPORTS
-    - echo HOME
-    - echo DISPLAY
-    - echo LANG
-    - echo PATH
+    - echo $CIRCLECI
+    - echo $CI
+    - echo $CIRCLE_PROJECT_USERNAME
+    - echo $CIRCLE_PROJECT_REPONAME
+    - echo $CIRCLE_BRANCH
+    - echo $CIRCLE_TAG
+    - echo $CIRCLE_SHA1
+    - echo $CIRCLE_REPOSITORY_URL
+    - echo $CIRCLE_COMPARE_URL
+    - echo $CIRCLE_BUILD_NUM
+    - echo $CIRCLE_PREVIOUS_BUILD_NUM
+    - echo $CI_PULL_REQUESTS
+    - echo $CI_PULL_REQUEST
+    - echo $CIRCLE_ARTIFACTS
+    - echo $CIRCLE_USERNAME
+    - echo $CIRCLE_TEST_REPORTS
+    - echo $HOME
+    - echo $DISPLAY
+    - echo $LANG
+    - echo $PATH
 
 deployment:
   release:
